@@ -1,0 +1,29 @@
+{
+  "name": "delphi",
+  "version": "1.0.0",
+  "description": "my dear Delphi",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://alejandro@goodhousekeeper.ru/srv/git/delphi.git"
+  },
+  "keywords": [
+    "delphi"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "goodhousekeeper",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-less": "*",
+    "gulp-minify": "*",
+    "gulp-rename": "*",
+    "vinyl": "^2.1.0",
+    "vinyl-fs": "^3.0.3"
+  },
+  "dependencies": {}
+}

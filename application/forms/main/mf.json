@@ -1,0 +1,279 @@
+{
+    "name": "main_form",
+    "className": "TForm",
+    "caption": "Delphi.js Boilerplate - Main Form. It is sizeable and draggable",
+    "top": 50,
+    "right": 50,
+    "bottom": 50,
+    "left": 50,
+    "minWidth": 700,
+    "minHeight": 600,
+    "sizeable": true,
+    "visible": true,
+    "scripts": [
+        "application/forms/main/mf_logics.js"
+    ],
+    "TComponents": {
+        "myToolBar": {
+            "className": "TToolBar",
+            "top": 0,
+            "height": 30,
+            "TComponents": {
+                "addRecordToolButton": {
+                    "className": "TToolButton",
+                    "iconBase64": {
+                        "type": "png",
+                        "data": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAghJREFUeNqUk8GL01AQxr+XhqRJmlSwiOuhoIjXHvSiF0FYWdjuYUEq3sRTQVQEzz0WPHkThCLSP0APevCkN0HZXrQXuyIsgrpp2po1aZr25cVJW7ctrm4dGPJ4zHzM95sXFscxkiiVShv0WcFy8Y3yeXKQf9+EYbhSq9Ue+b6PIAjAeYR226OzQDqtwTRNWJaFbNZCuXz1ZiqVwoJAEpxzuK6LTqczFrDtnxiEAoZhgkccUkqCbmgLo0j/HJQBicGYiUlikssLUPmkMZ42R+Ocj3kLjWq1+qJQKBSFEOj3+1MrnBikkclkyH8WrVbrJdVuHSRwtlKpFOch2s4e/MEQiqogYxrIEsTV9c212+UbyQbeHQpx13HhD4fQCNxIHCGIgKar/wNx5l2w6FAGB29hfwMR7tsP8Pn7DnoX29eOOtZDLvjyELsE8f2xD1gtXsaTdj33Ndcmz/FMgJr+hNj9ATfw8TioYzvchi5pcCMXcp/pXI23aKzGvoDnefEiRI7dXg/u0Edz0MSpjdPjOoc7OL95IU/H/Ounr2YTUJP8t8eUj09g59knyLIMZc3Ax3rzyygd2cSoMS+gJwXJY1EUZWwhpWrQB3u4q96CkdFw5+09dKMuhMcZYzgXq4wWNf2d6W+7TmOfjCJa1eSOJZlUJilJEkaXxLrI4TiT2RvI7Io4o+CXAAMAc6oo2DGhP/IAAAAASUVORK5CYII="
+                    },
+                    "toolTip": "Добавить новую запись",
+                    "height": 24,
+                    "width": 24
+                },
+                "editRecordToolButton": {
+                    "className": "TToolButton",
+                    "icon": "application/resources/images/icons/record_update.png",
+                    "enabled": false,
+                    "height": 24,
+                    "width": 24
+                },
+                "deleteRecordToolButton": {
+                    "className": "TToolButton",
+                    "icon": "application/resources/images/icons/record_delete.png",
+                    "enabled": false,
+                    "height": 24,
+                    "width": 24
+                },
+                "myToolBarSeparator1": {
+                    "className": "TToolBarSeparator",
+                    "height": 24,
+                    "width": 0
+                },
+                "getUSDRateButton": {
+                    "className": "TToolButton",
+                    "toolTip": "Получить курс доллара к рублю",
+                    "iconBase64": {
+                        "type": "png",
+                        "data": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAlFJREFUeNqck19IU2EUwM/9V67Nltl09g9Go8LHih4iqIfSPVQSySXRmURBi1HBIFrEROkvIZQx8SG0iEqo2UORRFiE1VsvQtZLbW61aVJq5Wr3ft93O59tw+7mSwcOv3O/czj/7vcJhmEAl9N714MoiiChCgLsxqPl6HqD9ka0k2g/pIwBjz/X/w5yIoJJGAagrgj1Pu82wNjEyb9ZtpBZzAnWYgX12w/NSqgGyNIc8dyH/jpzAmHOCOucq9yq6g81L6moclOq4zgyUEZmyaX9YI0fET7/4H1hB5QZG/b5zhyw2Be7hwYigwK6Tqjbgzm2tuw8xpiRQi0+Ai5oqX1ZxRpCCNy7fuUZZRRsJdKvPCm7Rhjr1wmdJwFl0xOpxEeGm65rPrqDUgpTP7XSLK1YoAljqs0J8js47nFVV650Ndb7gg1lDqeLz54PEkSYmhiLRrov3R1LRG93PomOFHSAeUY+j364c/XUofZAo6dVkhQ46d3Vxvn66aMXtrJyV/2RYAN2srnoCBq2Rih7i3rDoog6bx2Z4bzfEx7iu7E7Kl3od8xNIOcT6ARbFbxorp7J0EUMlzed1m2ce5oOb+O7+ZKMxzDBZNEdtGyt4ghduPW4jRAdeEVZlrNU4Ot4crQvfDEynojd7H2ZGi7oIHvPPwX215yd0ails28g4Fc9HX9Ze9m6QIqJovBKlqThoiPMvgNm9GR0HahOOvjDoromZCllBLlroaIASP9eZdl8tye/p/kfiXtrt3RhxUFkCe4mnv6tgbPcDvO+hf+VPwIMAELCT9bc1h5OAAAAAElFTkSuQmCC"
+                    },
+                    "height": 24,
+                    "width": 24
+                },
+                "getEuroDRateButton": {
+                    "className": "TToolButton",
+                    "toolTip": "Получить курс евро к рублю",
+                    "iconBase64": {
+                        "type": "png",
+                        "data": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAblJREFUeNpi/P//PwMlgAWZUxuixcAIhExMjGpArh4QCwIxE5qeZw2rrmzGagAUqInJKIeE5jQkCopKqPxnQLiQmYmVoSHeIROnC/79Ayn+bxCcVZfIxc+ncnr/pm1bFkzYiqyGkZHhOU4D/vz9B1TAKMInLKry+/d3ho3z+rcDhRcC8VewAqD5zMyMDPhcEPzp+y/+f3//Mty7dvHO+y8/efk4WZORlDz98/f/WpwG/P33T653xb62n79+MEgra6h0Ld3VBvc/MwtDXbxrEd5Y+PP378ncYLv63mW7Gv/8+cNQFuNUz8vB8hURAAwn8Rvw558NSDPIBSADOhdva4QrBLqgJt6jHMg8hs8LT3NCnVp7l26rvnf90v2ZHbXLeNiZvyJigPEpXhf8/ftvKQcLY9W/f/8YpJXUFYHsH8CYmQKU+gyOBGCqBcUUTgN+/v4Dot69fProEY+AkJxHZIrz5sUzUdQADXkApBbAXYWcF4INBRj+/f9vJC4jn5pYUO0jLiMngyzPwsLKkBPs3L3x0qcynAaAnPjl208zoEFOQCEp9LzAxMh4e++dnxOxGkAOYGKgEAAEGABAIr18ZKB7qAAAAABJRU5ErkJggg=="
+                    },
+                    "height": 24,
+                    "width": 24
+                }
+            }
+        },
+        "firstPanel": {
+            "className": "TPanel",
+            "caption": "",
+            "top": 32,
+            "right": 0,
+            "height": 160,
+            "left": 0,
+            "border": false,
+            "depressed": false,
+            "TComponents": {
+                "aboutButton": {
+                    "className": "TBitButton",
+                    "iconBase64": {
+                        "type": "png",
+                        "data": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAghJREFUeNqkU01rE0EYfmZ39qNJS0glQntoRSIWirRoEUT0EKHixR/gRY8FPeoPELwLireCij9APHgpKCJWQREkyB6stNZIRaQ0a7qzn7Pj7CTZzZ566MDLPvPO+zzzzOw7RAiBwwySCdDFtSoIuS7nLRn1Azh7Ml5DiKfJl2WP9nPixuL81Mr5s7NN2zLscr3A0GT29YM4eP9p+2Tb+U1k6lFfIOWtc0szTbfLbHdAc123JFOr1YbQXlqYbra//moVAoJPakTYQRCoaa/Xw8uHp0oCd+5voPPXUNg0x+yMk+GhA0RRCN/3B1YFHjxzFD5xrI4rF6YwN2vi20+mcoZBFCcXEDwhQRAhDMN8xxdvPXgew8WFXRyt7GDjexeO40KnOhqNScUZcZCQOI7BOUeScLj/9sH8AGfmbFy7XIezxfD8DYNGLWT3yVisOKMCiuiHCdxegDQlIDrF3ZUZtXzvyR9Qa7z4L8RQnEJA2tlnKbxIh25WoQ8Kr97e7l9apdwaRCeKUzqCz00Y1kReFIce1h+fVrh1c0uuVcvtUToCjwm0iiyyCpsjLU7NSkk85+QCSbQXxSKk9niuIDEu3dpUeKJxvMSNmBdmnAxraje/+2rz47tOGsUhNcYwjPr0vIrRHJc1Pz6vdzJO4SAOV3faHzQZy3J25IDHtCtjjVBrNX+Nhxn/BRgAx2Lr29YMSnkAAAAASUVORK5CYII="
+                    },
+                    "enabled": true,
+                    "caption": "Non-modal",
+                    "height": 26,
+                    "top": 40,
+                    "width": 120,
+                    "right": 4,
+                    "textAlign": "center"
+                },
+                "aboutButtonModal": {
+                    "className": "TBitButton",
+                    "icon": "application/resources/images/icons/question.png",
+                    "enabled": false,
+                    "caption": "Show modal",
+                    "height": 26,
+                    "top": 70,
+                    "width": 120,
+                    "right": 4,
+                    "textAlign": "right"
+                },
+                "concatenateButton": {
+                    "className": "TButton",
+                    "caption": "Concatenate",
+                    "toolTip": "Press me to concatenate two strings",
+                    "height": 26,
+                    "top": 10,
+                    "width": 120,
+                    "right": 4,
+                    "textAlign": "left"
+                },
+                "editStringOne": {
+                    "className": "TEdit",
+                    "right": 130,
+                    "height": 26,
+                    "top": 10,
+                    "left": 108,
+                    "fontStyle": "italic",
+                    "placeholder": "TEdit with italic font"
+                },
+                "editStringTwo": {
+                    "className": "TEdit",
+                    "right": 130,
+                    "height": 26,
+                    "top": 40,
+                    "left": 108,
+                    "placeholder": "TEdit with regular font"
+                },
+                "comboBoxOne": {
+                    "className": "TComboBox",
+                    "right": 130,
+                    "height": 26,
+                    "top": 70,
+                    "left": 108,
+                    "items": [
+                        [
+                            "0",
+                            "This is default (or zero) element"
+                        ],
+                        [
+                            "1",
+                            "This is first element"
+                        ],
+                        [
+                            "2",
+                            "Second element"
+                        ],
+                        [
+                            "3",
+                            "Third of us"
+                        ],
+                        [
+                            "4",
+                            "Magnificent Four"
+                        ],
+                        [
+                            "5",
+                            "5-th element"
+                        ]
+                    ],
+                    "initialValue": "3"
+                },
+                "labelStringOne": {
+                    "className": "TStaticText",
+                    "caption": "First string",
+                    "width": 100,
+                    "height": 26,
+                    "top": 10,
+                    "left": 4,
+                    "textAlign": "right"
+                },
+                "labelStringTwo": {
+                    "className": "TStaticText",
+                    "caption": "Second string",
+                    "width": 100,
+                    "height": 26,
+                    "top": 40,
+                    "left": 4,
+                    "textAlign": "center"
+                },
+                "labelStringThree": {
+                    "className": "TStaticText",
+                    "caption": "Combo caption",
+                    "width": 100,
+                    "height": 26,
+                    "top": 70,
+                    "left": 4,
+                    "textAlign": "left"
+                },
+                "labelResult": {
+                    "className": "TStaticText",
+                    "caption": "Multiline colored TStatic text. Try to fill First string and Second string, then press Concatenate button for result.",
+                    "top": 102,
+                    "left": 2,
+                    "right": 2,
+                    "height": 48,
+                    "textAlign": "center",
+                    "color": "maroon",
+                    "multiLine": true
+                }
+            }
+        },
+        "secondPanel": {
+            "className": "TPanel",
+            "caption": "Panel with caption as a container for TRadioButton, TCheckBox and TMemo",
+            "captionColor": "navy",
+            "top": 204,
+            "right": 1,
+            "bottom": 1,
+            "left": 1,
+            "TComponents": {
+                "firstCheckBox": {
+                    "className": "TCheckBox",
+                    "caption": "First CheckBox",
+                    "height": 24,
+                    "width": 120,
+                    "top": 10,
+                    "left": 8
+                },
+                "secondCheckBox": {
+                    "className": "TCheckBox",
+                    "caption": "Second CheckBox",
+                    "enabled": false,
+                    "height": 24,
+                    "width": 140,
+                    "top": 10,
+                    "left": 140
+                },
+                "firstRadioButton": {
+                    "className": "TRadioButton",
+                    "caption": "Do it once",
+                    "height": 24,
+                    "width": 100,
+                    "top": 40,
+                    "left": 8
+                },
+                "secondRadioButton": {
+                    "className": "TRadioButton",
+                    "caption": "Do it twice",
+                    "height": 24,
+                    "width": 100,
+                    "top": 40,
+                    "left": 108
+                },
+                "thirdRadioButton": {
+                    "className": "TRadioButton",
+                    "caption": "Do it three",
+                    "height": 24,
+                    "width": 100,
+                    "top": 40,
+                    "left": 208
+                },
+                "fourthRadioButton": {
+                    "className": "TRadioButton",
+                    "caption": "Do it four",
+                    "height": 24,
+                    "width": 100,
+                    "top": 40,
+                    "left": 308
+                },
+                "myMemo": {
+                    "className": "TMemo",
+                    "placeholder": "Just write on something ...",
+                    "top": 70,
+                    "left": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "color": "maroon"
+                }
+            }
+        }
+    }
+}

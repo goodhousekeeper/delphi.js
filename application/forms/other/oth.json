@@ -1,0 +1,203 @@
+{
+    "name": "other_form",
+    "className": "TForm",
+    "caption": "Delphi.js Boilerplate - modal or non-modal form",
+    "width": 750,
+    "height": 600,
+    "screenCenter": true,
+    "visible": false,
+    "sizeable": true,
+    "iconBase64": {
+        "type": "png",
+        "data": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAghJREFUeNqkU01rE0EYfmZ39qNJS0glQntoRSIWirRoEUT0EKHixR/gRY8FPeoPELwLireCij9APHgpKCJWQREkyB6stNZIRaQ0a7qzn7Pj7CTZzZ566MDLPvPO+zzzzOw7RAiBwwySCdDFtSoIuS7nLRn1Azh7Ml5DiKfJl2WP9nPixuL81Mr5s7NN2zLscr3A0GT29YM4eP9p+2Tb+U1k6lFfIOWtc0szTbfLbHdAc123JFOr1YbQXlqYbra//moVAoJPakTYQRCoaa/Xw8uHp0oCd+5voPPXUNg0x+yMk+GhA0RRCN/3B1YFHjxzFD5xrI4rF6YwN2vi20+mcoZBFCcXEDwhQRAhDMN8xxdvPXgew8WFXRyt7GDjexeO40KnOhqNScUZcZCQOI7BOUeScLj/9sH8AGfmbFy7XIezxfD8DYNGLWT3yVisOKMCiuiHCdxegDQlIDrF3ZUZtXzvyR9Qa7z4L8RQnEJA2tlnKbxIh25WoQ8Kr97e7l9apdwaRCeKUzqCz00Y1kReFIce1h+fVrh1c0uuVcvtUToCjwm0iiyyCpsjLU7NSkk85+QCSbQXxSKk9niuIDEu3dpUeKJxvMSNmBdmnAxraje/+2rz47tOGsUhNcYwjPr0vIrRHJc1Pz6vdzJO4SAOV3faHzQZy3J25IDHtCtjjVBrNX+Nhxn/BRgAx2Lr29YMSnkAAAAASUVORK5CYII="
+    },
+    "scripts": [
+        "application/forms/other/other_form_logics.js"
+    ],
+    "TComponents": {
+        "OMF_Button": {
+            "className": "TBitButton",
+            "icon": "application/resources/images/icons/radioactivity.png",
+            "caption": "Show one more form",
+            "height": 26,
+            "top": 8,
+            "width": 222,
+            "left": 8,
+            "textAlign": "center"
+        },
+        "OMF_Modal_Button": {
+            "className": "TBitButton",
+            "icon": "application/resources/images/icons/radioactivity.png",
+            "caption": "ShowModal one more form",
+            "height": 26,
+            "top": 40,
+            "width": 222,
+            "left": 8,
+            "textAlign": "center"
+        },
+        "OMF_Splash_Button": {
+            "className": "TBitButton",
+            "icon": "application/resources/images/icons/gear.png",
+            "caption": "Show splash screen",
+            "height": 26,
+            "top": 72,
+            "width": 222,
+            "left": 8,
+            "textAlign": "center"
+        },
+        "DLG_Button": {
+            "className": "TBitButton",
+            "icon": "application/resources/images/icons/gear.png",
+            "caption": "Show MessageDLG",
+            "height": 26,
+            "top": 104,
+            "width": 222,
+            "left": 8,
+            "textAlign": "center"
+        },
+        "passEdit": {
+            "className": "TEdit",
+            "password": true,
+            "height": 26,
+            "top": 136,
+            "width": 222,
+            "left": 8,
+            "fontStyle": "italic",
+            "placeholder": "passsssssss....."
+        },
+        "dateEdit": {
+            "className": "TDatePicker",
+            "placeholder": "--.--.----",
+            "height": 26,
+            "top": 168,
+            "width": 222,
+            "left": 8
+        },
+        "dateEditMore": {
+            "className": "TDatePicker",
+            "placeholder": "--.--.----",
+            "height": 26,
+            "top": 200,
+            "width": 222,
+            "left": 8
+        },
+        "emptyPanel": {
+            "className": "TPanel",
+            "caption": "",
+            "top": 8,
+            "right": 8,
+            "height": 218,
+            "left": 240,
+            "depressed": true
+        },
+        "protoGrid": {
+            "className": "TGrid",
+            "rowId": "row_id",
+            "headerHeight": 60,
+            "rowHeight": 28,
+            "top": 236,
+            "right": 8,
+            "left": 8,
+            "bottom": 8,
+            "columns": [
+                {
+                    "name": "firstColumn",
+                    "caption": "First column caption - two levels",
+                    "width": 150,
+                    "lineCount": 2,
+                    "textAlignHeader": "center",
+                    "textAlignData": "right"
+                },
+                {
+                    "name": "secondColumn",
+                    "caption": "Second column - only one level",
+                    "width": 475,
+                    "textAlignHeader": "center",
+                    "textAlignData": "center"
+                },
+                {
+                    "name": "thirdColumn",
+                    "caption": "Third column caption",
+                    "width": 80,
+                    "lineCount": 3,
+                    "textAlignHeader": "center",
+                    "textAlignData": "left"
+                }
+            ],
+            "data": [
+                {
+                    "row_id": 10,
+                    "firstColumn": 111,
+                    "secondColumn": 222,
+                    "thirdColumn": 333
+                },
+                {
+                    "row_id": 20,
+                    "firstColumn": 11111,
+                    "secondColumn": 22222,
+                    "thirdColumn": 33333
+                },
+                {
+                    "row_id": 30,
+                    "firstColumn": "1 1111.11",
+                    "secondColumn": "2 222.22",
+                    "thirdColumn": "3 333.33"
+                },
+                {
+                    "row_id": 40,
+                    "firstColumn": "1 1111.11",
+                    "secondColumn": "2 222.22",
+                    "thirdColumn": "3 333.33"
+                },
+                {
+                    "row_id": 50,
+                    "firstColumn": "1 1111.11",
+                    "secondColumn": "2 222.22",
+                    "thirdColumn": "3 333.33"
+                },
+                {
+                    "row_id": 60,
+                    "firstColumn": "1 1111.11",
+                    "secondColumn": "2 222.22",
+                    "thirdColumn": "3 333.33"
+                },
+                {
+                    "row_id": 70,
+                    "firstColumn": "1 1111.11",
+                    "secondColumn": "2 222.22",
+                    "thirdColumn": "3 333.33"
+                },
+                {
+                    "row_id": 80,
+                    "firstColumn": "1 1111.11",
+                    "secondColumn": "2 222.22",
+                    "thirdColumn": "3 333.33"
+                },
+                {
+                    "row_id": 90,
+                    "firstColumn": "1 1111.11",
+                    "secondColumn": "2 222.22",
+                    "thirdColumn": "3 333.33"
+                },
+                {
+                    "row_id": 100,
+                    "firstColumn": "1 1111.11",
+                    "secondColumn": "2 222.22",
+                    "thirdColumn": "3 333.33"
+                },
+                {
+                    "row_id": 110,
+                    "firstColumn": "1 1111.11",
+                    "secondColumn": "2 222.22",
+                    "thirdColumn": "3 333.33"
+                },
+                {
+                    "row_id": 120,
+                    "firstColumn": "1 1111.11",
+                    "secondColumn": "2 222.22",
+                    "thirdColumn": "3 333.33"
+                }
+            ]
+        }
+    }
+}
