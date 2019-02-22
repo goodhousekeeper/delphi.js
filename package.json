@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "ssh://alejandro@goodhousekeeper.ru/srv/git/delphi.git"
+    "url": "https://github.com/goodhousekeeper/delphi.js.git "
   },
   "keywords": [
     "delphi"
@@ -16,7 +16,7 @@
   "author": "goodhousekeeper",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-clean-css": "*",
     "gulp-concat": "*",
     "gulp-less": "*",
